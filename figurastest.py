@@ -1,4 +1,5 @@
 import unittest
+from figuras import Figuras
 
 # Todos las funciones de prueba se ejecutan de manera independiente.
 # Todos las funciones de prueba deben comenzar con la palabra test.
@@ -7,7 +8,7 @@ import unittest
 # http://148.217.200.108:89
 
 
-class TestFiguras(unitest.TestCase):
+class TestFiguras(unittest.TestCase):
 
     def setUp(self):
         self.figura = Figuras()
@@ -17,7 +18,7 @@ class TestFiguras(unitest.TestCase):
         resultado = self.figura.cuadrado(5)
         self.assertEqual(25, resultado)
 
-    def test_area_cuadrado_lado_5(self):
+    def test_area_cuadrado_lado_6(self):
         # figura = Figuras()
         resultado = self.figura.cuadrado(6)
         self.assertEqual(36, resultado)
